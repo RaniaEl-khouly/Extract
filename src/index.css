@@ -1,0 +1,639 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  max-height: 1000000px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  background: #fff;
+  font: 16px/1.6 "Muli", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px;
+  color: inherit;
+}
+
+h1 {
+  font-size: 46px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+
+p {
+  margin: 10px 0 15px 0;
+}
+
+a {
+  color: #1a237e ;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #fc2ec1;
+}
+
+.btn.btn-primary {
+  background: #fc2ec1;
+  border-color: #fc2ec1;
+  padding: 13px 35px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background 0.3s linear, color 0.3s linear;
+  -webkit-transition: background 0.3s linear, color 0.3s linear;
+}
+
+.btn.btn-primary:focus,
+.btn.btn-primary:hover {
+  background: #fff;
+  border-color: #fc2ec1;
+  color: #fc2ec1;
+   
+}
+
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+
+/*navbar*/
+#header {
+  padding: 15px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s linear;
+}
+
+#header .navbar {
+  padding: 0;
+  justify-content: space-between;
+  background: none !important;
+}
+
+#header .navbar-brand {
+  color: #fc2ec1;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: auto;
+  padding: 0;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+#header .navbar-collapse {
+  flex-grow: 0;
+}
+
+#header .navbar-collapse .navbar-nav {
+  
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#header .navbar-collapse a:last-child {
+  padding-right: 0;
+}
+
+#header .navbar-collapse a {
+  color: #1a237e;
+  position: relative;
+}
+
+#header .navbar-collapse a:hover,
+#header .navbar-collapse a.active {
+  background: none;
+  color: #fc2ec1;
+}
+
+#header .navbar-collapse a:hover::before,
+#header .navbar-collapse a.active:before {
+  right: 7px;
+  left: 8px;
+  opacity: 1;
+}
+
+#header .navbar-collapse a::before {
+  content: '';
+  background: #fc2ec1;
+  height: 1px;
+  position: absolute;
+  bottom: 7px;
+  left: -20px;
+  right: 100%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  opacity: 0;
+}
+
+
+
+/*Hero*/
+.hero-block {
+  margin: 65px 0 0;
+}
+
+
+.hero-block .carousel-item::before {
+  content: '';
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero-block .carousel-item img {
+  width: 100%;
+}
+
+.hero-block p {
+  margin: 0 0 30px;
+}
+
+/*About us*/
+.block {
+  padding: 70px 0;
+  border-bottom: 1px solid #cb0f8c;
+}
+
+
+ .title-holder{
+  text-align: center;
+  margin: 0 0 40px;
+  
+}
+
+.title-holder h2 {
+  margin: 0 0 5px;
+  text-transform: uppercase;
+}
+
+.title-holder .subtitle {
+  color: #999999;
+}
+
+.title-holder .subtitle::before {
+  content: '-';
+  margin: 0 5px 0 0;
+}
+
+.title-holder .subtitle::after {
+  content: '-';
+  margin: 0 0 0 5px;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.arabic-list {
+direction: rtl;
+text-align: right;
+list-style-position: inside;
+}
+
+
+
+.about-block .progress-block{
+  margin: 30px 0 25px;
+  
+}
+
+.about-block .progress-block p{
+  text-transform: uppercase;
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+/*Products*/
+.products-block .productlist>div {
+  padding: 15px;
+  overflow: hidden;
+  position: relative;
+
+
+}
+
+.products-block .productlist>div img {
+  position: relative;
+  top: 0;
+  -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.products-block .productlist>div .label {
+  position: absolute;
+  height: 60px;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  color: #fff;
+}
+
+.products-block .productlist>div h3 {
+  margin: 0 0 5px;
+  color:#fc2ec1 ;
+  font-size: 16px;
+}
+
+.products-block .productlist>div p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.products-block .productlist>div:hover .label {
+  bottom: 0;
+}
+
+.products-block .productlist>div:hover img{
+  transform: scale(1.08);
+}
+
+.products-block .productlist .products-wrapper {
+  overflow: hidden;
+  position: relative !important;
+  background: #666;
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+}
+
+.products-block .productlist .label {
+  font-size: 100%;
+}
+
+/*pagination*/
+.products-block .pagination {
+  justify-content: center;
+  margin: 25px 0 0;
+}
+
+.products-block .pagination .page-item.active .page-link {
+  background: #fc2ec1;
+  border-color: #fc2ec1;
+}
+
+.products-block .pagination .page-item .page-link {
+  padding: 8px 15px 10px;
+}
+
+.pagination>li.active a {
+  background: #fc2ec1;
+  border-color: #fc2ec1;
+}
+
+.pagination>li.active a:hover {
+  background:#fc2ec1 ;
+  border-color: #fc2ec1;
+}
+
+.pagination>li>a {
+  color: #fc2ec1;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  padding: 6px 15px 12px;
+}
+
+.pagination>li>a:hover {
+  background: #fc2ec1;
+  color: #fff;
+  border-color: #fc2ec1;
+}
+
+/*skincare*/
+
+.skincare-block .holder {
+  transition: all 0.3s linear;
+}
+
+.skincare-block .skinicon {
+ 
+  font-size:30px; 
+  color: #fc2ec1; 
+  border-radius: 50%;
+  padding: 20px;
+  display: inline-block;
+  
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+
+.skincare-block .holder:hover .skinicon {
+  box-shadow: inset 0 0 0 30px #fc2ec1;
+  color: white; 
+ font-size: 20px;
+}
+
+.holder h3 {
+  margin: 15px 0 20px;
+  font-size: 23px;
+  color: #1a237e;
+}
+
+.holder p {
+  font-size: 17px;
+  
+} 
+
+
+/* Optional: media query to adjust layout for small screens 
+@media (max-width: 768px) {
+  .holder {
+    margin-bottom: 15px;
+  }
+
+ .skinicon {
+    font-size: 30px;
+    padding: 15px;
+  }
+} */
+
+/*Reviews Section*/
+
+.reviews-block h3{
+  font-size: 22px;
+  color: #1a237e;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.reviews-block .imagediv {
+  
+  overflow: hidden;
+  position: relative;
+}
+
+.reviews-block .imagediv .overlay {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s linear;
+  vertical-align: middle;
+  background: rgba(248, 40, 168, 0.9);
+  opacity: 0;
+}
+
+.reviews-block .imagediv:hover .overlay {
+  top: 0;
+  opacity: 1;
+}
+
+.socials {
+  display: table;
+  height: 100%;
+  width: 100%;
+  
+  
+}
+
+.socials ul {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.socials li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+  
+}
+
+.socials a {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background: #fff;
+  color: #fc2ec1;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  padding: 0px;
+  transition: background 0.3s linear, color 0.3s linear;
+  -webkit-transition: background 0.3s linear, color 0.3s linear;
+}
+
+.socials a:hover {
+  background: #fc2ec1;
+  color: #fff;
+}
+
+.reviews-block div[class*="col"] {
+  margin: 0 0 50px;
+}
+
+.reviews-block .imagediv img {
+  width: 100%;
+  height: auto;
+}
+
+/*Haircare Section*/
+.haircare-block {
+  padding: 90px 0 70px;
+  background-position: 50% 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('assets/images/haircare.jpg');
+  position: relative;
+  color: #fff;
+}
+
+.haircare-block::before {
+  content: '';
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.haircare-block .container-fluid {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.haircare-block .subtitle {
+  color: #cccccc;
+}
+
+.haircare-block h3 {
+  padding: 15px 0 0;
+  display: block;
+  margin-bottom: 10px; 
+  font-size: 30px;
+  color: #fe08b0;
+}
+
+.haircare-block p{
+  font-size: 18px;
+}
+
+
+.arabic-content {
+  text-align: center;
+  padding: 0 0 10%;
+  line-height: 2.5;
+  }
+
+  .haircare-block .carousel-indicators button {
+    border: 0;
+  }
+
+  .haircare-block .carousel-indicators .active {
+    background: #fc2ec1;
+  }
+ /*productList Section*/
+ 
+ .productlist-block .row {
+  align-items: center;
+  margin: 0;
+}
+
+.productlist-block .row>div {
+  text-align: center;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.productlist-block .heading {
+  background: #e6e6e6;
+  padding: 15px 60px;
+}
+
+.productlist-block .content .list-group-item {
+  padding: 10px 20px;
+  border: 0;
+  background: #f7f7f7;
+  font-size: 17px;
+}
+
+.productlist-block .content .list-group-item:nth-child(2n-1) {
+  background: #ededed;
+}
+
+.productlist-block .btn-holder {
+  padding: 30px 20px;
+}
+
+.productlist-block div[class*="col"]:nth-child(2) {
+  box-shadow: 0 0 40px 5px #e0e0e0;
+  position: relative;
+}
+
+.productlist-block div[class*="col"]:nth-child(2) .heading {
+  padding: 30px 20px;
+  background: #fc2ec1;
+  color: #fff;
+}
+
+.productlist-block div[class*="col"]:nth-child(2):before {
+  content: 'Best Seller';
+  text-transform: uppercase;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background: #fe08b0;
+  color: #fff;
+  padding: 5px 10px;
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  font-size: 12px;
+  width: 150px;
+}
+
+.productlist-block h3 {
+  text-transform: uppercase;
+  margin: 18px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+  
+
