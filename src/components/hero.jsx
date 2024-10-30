@@ -53,9 +53,7 @@ export default function AppHero(){
             )
         })
     }
-      
-      
-    </Carousel>
+                </Carousel>
         </section>
     )
 }

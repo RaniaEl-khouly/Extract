@@ -10,6 +10,8 @@ import AppReviews from './components/reviews';
 import AppHaircare from './components/haircare';
 import AppProductlist from './components/productlist';
 import AppBlog from './components/blog';
+import AppContact from './components/contact';
+import AppFooter from './components/footer';
 
 
 function App() {
@@ -29,10 +31,11 @@ function App() {
         <AppHaircare/>
         <AppProductlist/>
         <AppBlog/>
+        <AppContact/>
       </main>
-      
-        
-      
+      <footer id='footer'>
+       <AppFooter/>
+      </footer>
     </div>
   )
 }

@@ -91,8 +91,8 @@ export default function AppReviews(){
                         <div className='overlay'>
                             <div className='socials'>
                                 <ul>
-                               <li><a href={review.fblink}><FaFacebook /></a></li> 
-                               <li><a href={review.instalink} ><AiFillInstagram /></a></li> 
+                                    <li><a href={review.fblink}><FaFacebook /></a></li> 
+                                    <li><a href={review.instalink} ><AiFillInstagram /></a></li> 
                                 </ul>
                             </div>
                         </div>

@@ -6,7 +6,7 @@ import { CiDroplet } from "react-icons/ci";
 import { FaRegFaceSadCry } from "react-icons/fa6";
 import { PiThermometerHotDuotone } from "react-icons/pi";
 import { HiOutlineHandRaised } from "react-icons/hi2";
-import Combination from '../assets/images/Combination.jpg';
+
 const skincareData =[
     {
         id:1,
