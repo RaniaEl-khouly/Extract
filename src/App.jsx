@@ -12,7 +12,7 @@ import AppProductlist from './components/productlist';
 import AppBlog from './components/blog';
 import AppContact from './components/contact';
 import AppFooter from './components/footer';
-import { HashRouter as Router } from 'react-router-dom';
+
 
 
 
