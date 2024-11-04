@@ -2,7 +2,7 @@
   "name": "extract",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://raniael-khouly.github.io/Extract-Website",
+  "homepage": "https://RaniaEl-khouly.github.io/Extract-Website",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
