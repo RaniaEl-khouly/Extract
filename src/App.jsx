@@ -13,11 +13,14 @@ import AppBlog from './components/blog';
 import AppContact from './components/contact';
 import AppFooter from './components/footer';
 
+import React, { useEffect } from 'react';
 
 
 
 function App() {
- 
+  useEffect(() => {
+    document.cookie = "data_id=abc123; SameSite=None; Secure";
+  }, []);
 
   return (
     <div className='App'>
