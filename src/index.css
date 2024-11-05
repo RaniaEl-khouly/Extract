@@ -661,6 +661,8 @@ color: #fc2ec1;
 
 .contact-block .row {
   margin: 0 0 25px;
+  text-align: left;
+  color: #fc2ec1;
 }
 
 textarea {
@@ -694,6 +696,7 @@ textarea {
    font-size: 50px;
  }
 
+ 
  /*FOOTER SECTION*/
 
  #footer {
