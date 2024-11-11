@@ -2,21 +2,20 @@
   "name": "extract",
   "private": true,
   "version": "0.0.0",
-  
   "type": "module",
+  "homepage": "https://RaniaEl-khouly.github.io/Extract-Website",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "start": "vite start",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-   "test":"vite test",
-   "eject":"vite eject"
+   "preview": "vite preview"
+   
+   
   },
   "dependencies": {
-    "homepage": "https://RaniaEl-khouly.github.io/Extract-Website",
+   
     "bootstrap": "^5.3.3",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",

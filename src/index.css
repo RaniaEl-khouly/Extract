@@ -149,7 +149,7 @@ a:focus {
   right: 0;
   top: 0;
   z-index: 9999;
-  background: #f9a4dd;
+  background: #f9e2f2;
   box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.5s linear;
 }
