@@ -22,21 +22,21 @@ export default function AppContact(){
                 <Form className='contact-form'>
                     <Row>
                         <Col sm={4}>
-                        <label for="name">Name:</label>
+                        <label htmlFor="name">Name:</label>
                         <Form.Control type='text' id='name' name='name'autoComplete='given-name' placeholder="Enter your Full Name" required />
                         </Col>
                         <Col sm={4}>
-                        <label for="email">Email:</label>
+                        <label htmlFor="email">Email:</label>
                         <Form.Control type='email' id='email' name='email' autoComplete='on' placeholder="Enter your Email Address" required />
                         </Col>
                         <Col sm={4}>
-                        <label for="tel">Tel:</label>
+                        <label htmlFor="tel">Tel:</label>
                         <Form.Control type='tel' id='tel' name='tel' autoComplete='off' placeholder="Enter your Contact Number" required />
                         </Col>
                     </Row>
                     <Row>
                         <Col sm={12}>
-                        <label for="msg">Msg:</label>
+                        <label htmlFor="msg">Msg:</label>
                         <Form.Control as="textarea" id='msg' name='msg' placeholder="Enter your Message" required/>
                         </Col>
                     </Row>

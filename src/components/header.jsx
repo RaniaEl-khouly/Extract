@@ -10,7 +10,7 @@ export default function AppHeader (){
         <Container>
           <Navbar.Brand href="/">
           <div className="d-flex flex-column align-items-center">
-              <img src={logo} alt="Brand Logo" style={{ width: '50px', height: '50px' }} />
+          <img src={logo} alt="Brand Logo" style={{ width: '50px', height: '50px' }} />
               <span className="text-center">EXTRACT</span> 
             </div>
           </Navbar.Brand>
